@@ -3,8 +3,8 @@
 This is a fork from https://github.com/vbuch/node-signpdf
 
 [![npm version](https://badge.fury.io/js/node-pdfsign.svg)](https://badge.fury.io/js/node-pdfsign)
-[![Build Status](https://travis-ci.com/Gigasz/node-pdfsign.svg?branch=master)](https://travis-ci.com/Gigasz/node-pdfsign)
-[![Coverage Status](https://coveralls.io/repos/github/Gigasz/node-pdfsign/badge.svg?branch=master)](https://coveralls.io/github/Gigasz/node-pdfsign?branch=master)
+[![Build Status](https://travis-ci.com/Gigasz/node-signpdf.svg?branch=master)](https://travis-ci.com/Gigasz/node-signpdf)
+[![Coverage Status](https://coveralls.io/repos/github/Gigasz/node-signpdf/badge.svg?branch=master)](https://coveralls.io/github/Gigasz/node-signpdf?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/npm/node-pdfsign/badge.svg)](https://snyk.io/test/npm/node-pdfsign)
 
 Simple signing of PDFs in node.
@@ -68,13 +68,13 @@ const signedPdf = signer.sign(
 
 ### Generate a PDF
 
-See the [unit-testing code](https://github.com/Gigasz/node-pdfsign/blob/master/src/signpdf.test.js). PDFKit is used there for generating the document. This also allows easy addition of the signature placeholder.
+See the [unit-testing code](https://github.com/Gigasz/node-signpdf/blob/master/src/signpdf.test.js). PDFKit is used there for generating the document. This also allows easy addition of the signature placeholder.
 
 ### Append a signature placeholder
 
-What's needed is a `Sig` element and a `Widget` that is also linked in a `Form`. The form needs to be referenced in the root descriptor of the PDF as well. A (hopefully) [readable sample](https://github.com/Gigasz/node-pdfsign/blob/master/src/helpers/pdfkitAddPlaceholder.js) is available in the helpers. Note the `Contents` descriptor of the `Sig` where zeros are placed that will later be replaced with the actual signature.
+What's needed is a `Sig` element and a `Widget` that is also linked in a `Form`. The form needs to be referenced in the root descriptor of the PDF as well. A (hopefully) [readable sample](https://github.com/Gigasz/node-signpdf/blob/master/src/helpers/pdfkitAddPlaceholder.js) is available in the helpers. Note the `Contents` descriptor of the `Sig` where zeros are placed that will later be replaced with the actual signature.
 
-This package provides two [helpers](https://github.com/Gigasz/node-pdfsign/blob/master/src/helpers/index.js) for adding the signature placeholder:
+This package provides two [helpers](https://github.com/Gigasz/node-signpdf/blob/master/src/helpers/index.js) for adding the signature placeholder:
 
 * pdfkitAddPlaceholder
 * plainAddPlaceholder
@@ -83,7 +83,7 @@ This package provides two [helpers](https://github.com/Gigasz/node-pdfsign/blob/
 
 ### Generate and apply signature
 
-That's where the Signer kicks in. Given a PDF and a P12 certificate a signature is generated in detached mode and is replaced in the placeholder. This is best demonstrated in [the tests](https://github.com/Gigasz/node-pdfsign/blob/master/src/signpdf.test.js#L100).
+That's where the Signer kicks in. Given a PDF and a P12 certificate a signature is generated in detached mode and is replaced in the placeholder. This is best demonstrated in [the tests](https://github.com/Gigasz/node-signpdf/blob/master/src/signpdf.test.js#L100).
 
 ## Dependencies
 
