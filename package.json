@@ -1,16 +1,17 @@
 {
-    "name": "node-signpdf",
-    "version": "1.0.2",
+    "name": "node-pdfsign",
+    "version": "1.0.0",
     "description": "Simple signing of PDFs in node.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vbuch/node-signpdf"
+        "url": "https://github.com/Gigasz/node-signpdf"
     },
     "license": "MIT",
     "keywords": [
         "sign",
         "verify",
         "pdf",
+        "p12",
         "node",
         "nodejs",
         "esign",
@@ -19,7 +20,8 @@
         "sign detached",
         "pkcs7",
         "pkcs#7",
-        "digital signature"
+        "digital signature",
+        "digital sign"
     ],
     "main": "dist/signpdf.js",
     "engines": {
