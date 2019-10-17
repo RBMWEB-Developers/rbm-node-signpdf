@@ -1,10 +1,10 @@
 {
-    "name": "node-pdfsign",
+    "name": "rbm-node-pdfsign",
     "version": "1.0.1",
     "description": "Simple signing of PDFs in node.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Gigasz/node-signpdf"
+        "url": "https://github.com/RBMWEB-Developers/rbm-node-signpdf"
     },
     "license": "MIT",
     "keywords": [
