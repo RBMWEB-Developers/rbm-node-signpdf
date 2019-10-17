@@ -16,9 +16,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const createBufferPageWithAnnotation = (pdf, info, pagesRef, widget) => {
   const pagesDictionary = (0, _findObject.default)(pdf, info.xref, pagesRef).toString();
 
-  if (pagesDictionary.indexOf('/Annots') !== -1) {
-    throw new _SignPdfError.default('There already are /Annots described. This is not yet supported', _SignPdfError.default.TYPE_PARSE);
-  }
+  // if (pagesDictionary.indexOf('/Annots') !== -1) {
+  //   throw new _SignPdfError.default('There already are /Annots described. This is not yet supported', _SignPdfError.default.TYPE_PARSE);
+  // }
 
   const pagesDictionaryIndex = (0, _getIndexFromRef.default)(info.xref, pagesRef);
   return Buffer.concat([Buffer.from(`${pagesDictionaryIndex} 0 obj\n`), Buffer.from('<<\n'), Buffer.from(`${pagesDictionary}\n`), Buffer.from(`/Annots [${widget}]`), Buffer.from('\n>>\nendobj\n')]);
