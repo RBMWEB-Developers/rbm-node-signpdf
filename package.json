@@ -1,6 +1,6 @@
 {
     "name": "rbm-node-pdfsign",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Simple signing of PDFs in node.",
     "repository": {
         "type": "git",

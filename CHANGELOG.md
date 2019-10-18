@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.3]
+
+* Withdraw error in case '/Annots' is present in pdf file
+
 ## [1.0.1, 1.0.2]
 
 * Republish to fix messed up `latest` tag
