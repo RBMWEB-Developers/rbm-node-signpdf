@@ -1,8 +1,12 @@
 # CHANGELOG
 
+## [1.0.4]
+
+* adds .trim() on last line check for '%%EOF' in removeTrailingNewLine file
+
 ## [1.0.3]
 
-* Withdraw error in case '/Annots' is present in pdf file
+* Withdraw error in case '/Annots' is present in pdf file in createBufferPageWithAnnotation
 
 ## [1.0.1, 1.0.2]
 
