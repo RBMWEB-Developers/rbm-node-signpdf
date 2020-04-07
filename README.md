@@ -1,4 +1,4 @@
-# node-pdfsign
+# ![node-signpdf](https://raw.githubusercontent.com/vbuch/node-signpdf/master/resources/logo-horizontal.svg?sanitize=true)
 
 This is a fork from https://github.com/vbuch/node-signpdf
 

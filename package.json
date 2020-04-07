@@ -1,6 +1,6 @@
 {
     "name": "rbm-node-pdfsign",
-    "version": "1.0.4",
+    "version": "1.2.3",
     "description": "Simple signing of PDFs in node.",
     "repository": {
         "type": "git",
@@ -20,8 +20,8 @@
         "sign detached",
         "pkcs7",
         "pkcs#7",
-        "digital signature",
-        "digital sign"
+        "pades",
+        "digital signature"
     ],
     "main": "dist/signpdf.js",
     "engines": {
@@ -42,28 +42,6 @@
             "dist"
         ]
     },
-    "contributors": [
-        {
-            "name": "vbuch",
-            "url": "https://github.com/vbuch"
-        },
-        {
-            "name": "maldimirov",
-            "url": "https://github.com/maldimirov"
-        },
-        {
-            "name": "alekssakovsky",
-            "url": "https://github.com/alekssakovsky"
-        },
-        {
-            "name": "MohammedEssehemy",
-            "url": "https://github.com/mohammedessehemy"
-        },
-        {
-            "name": "samaleksov",
-            "url": "https://github.com/samaleksov"
-        }
-    ],
     "peerDependencies": {
         "node-forge": "^0.7.6"
     },
